@@ -8,8 +8,8 @@ public class Bolinhas {
 		
 		Scanner teclado = new Scanner(System.in);
 		
-		double gramas, peso;
-		int quant;
+		double peso;
+		int quant, gramas;
 
 		System.out.println("Quantas gramas pesa cada bolinha?");
 		gramas = teclado.nextInt();
