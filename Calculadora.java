@@ -7,7 +7,7 @@ public class Calculadora {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		
-		double n1, n2, resultado = 0;
+		double n1, n2, resultado;
 		String op;
 		
 		System.out.println("Informe o primeiro numero: ");
@@ -33,6 +33,9 @@ public class Calculadora {
 		  case "%":
 			  resultado = n1 % n2;
 			  break;
+		  default:
+			  resultado = 0;
+			  
 		}
 		
 		
@@ -42,3 +45,4 @@ public class Calculadora {
 	}
 
 }
+
