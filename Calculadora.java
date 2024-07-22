@@ -32,12 +32,12 @@ public class Calculadora {
 			  break;
 		  case "%":
 			  resultado = n1 % n2;
-			  break;
+			  break; 
 		  default:
-			  resultado = 0;
-			  
-		}
-		
+			  System.out.println("Você informou uma operação inválida.");
+			  System.out.println("Somente são válidas as operações +, -, *, /, % .");
+			  resultado = 0;			  
+		}		
 		
 		System.out.println("Resultado da operação: " + resultado);
 		
