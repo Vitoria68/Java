@@ -14,7 +14,7 @@ public class Calculadora {
 		n1 = sc.nextDouble(); 
 		System.out.println("Informe o segundo numero: ");
 		n2 = sc.nextDouble();
-		System.out.print("Informe a operação ( +, -, *, / ): ");
+		System.out.print("Informe a operação ( +, -, *, /, % ): ");
 		op = sc.next();
 		
 		switch(op) {
@@ -29,6 +29,9 @@ public class Calculadora {
 			  break;
 		  case "/":
 			  resultado = n1 / n2;
+			  break;
+		  case "%":
+			  resultado = n1 % n2;
 			  break;
 		}
 		
