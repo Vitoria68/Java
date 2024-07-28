@@ -34,7 +34,7 @@ public class Marmitex {
 		  case "colina":
 			  valor = (20 * quant) + 2.50;
 			  break; 
-		  case "alfa Sul":
+		  case "alfa sul":
 			  if (quant * 20 < 150) {
 				  valor = (20 * quant) + 3.00;
 				  }
