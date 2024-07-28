@@ -14,15 +14,15 @@ public class Crescente {
 		y = sc.nextInt();
 		
 		while ( x != y ) {
-			    if ( x > y) {
-			       System.out.println("DECRESCENTE!");
+		      if ( x > y) {
+			   System.out.println("DECRESCENTE!");
 		       }
 		       else if ( x < y ) {
-			            System.out.println("CRESCENTE");
+			   System.out.println("CRESCENTE");
 		       }
-			    System.out.print("Digite dois numeros: ");
-				x = sc.nextInt();
-				y = sc.nextInt();
+			System.out.print("Digite dois numeros: ");
+			x = sc.nextInt();
+			y = sc.nextInt();
 	    }
 		
 		sc.close();
