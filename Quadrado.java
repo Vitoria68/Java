@@ -5,30 +5,20 @@ import java.util.Scanner;
 public class Quadrado {
 
 	public static void main(String[] args) {
-		Scanner teclado = new Scanner(System.in);
+		Scanner sc = new Scanner(System.in);
+		
+		double lado;
 		 
-        double q1, q2, lado1, lado2;
-
-        System.out.println("Informe o lado do primeiro quadrado:");
-        lado1 = teclado.nextDouble();
-
-        System.out.println("Informe o lado do segundo quadrado:");
-        lado2 = teclado.nextDouble();
-
-        q1 = lado1 * 2;
-        q2 = lado2 * 2;
-
-        System.out.printf("A area do primeiro quadrado é %.0f e o do segundo é %.0f.", q1, q2);
-
-        System.out.println();
-        if (q1 == q2) {
-        	System.out.println("Os quadrados têm áreas iguais.");
-            }
-        else {
-        	System.out.println("Os quadrados têm áreas diferentes.");
-        }
-        
-       teclado.close();
+		System.out.print("Informe o lado do quadrado: ");
+		lado = sc.nextDouble();
+		
+		area(lado);
+		
+		sc.close();
 	}
-
+	
+	static void area(double lado) {
+		double area = lado * lado;
+		System.out.printf("A area do quadrado eh: %.1f.", area);
+	}
 }
